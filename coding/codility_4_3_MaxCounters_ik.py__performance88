@@ -10,6 +10,8 @@ def solution(N, A):
             B[A[i]-1]+=1
             if B[A[i]-1]>max:
                 max=B[A[i]-1]
+        elif max==0:
+            pass
         else:
             B=[max]*N
     return B
